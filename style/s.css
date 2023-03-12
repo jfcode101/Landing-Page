@@ -57,6 +57,8 @@ li {
     top: 0;
     left: 0;
     width: 100%;
+    box-shadow: 2px 2px 6px -1px var(--dark-bckgrnd-color);
+    z-index: 999;
 }
 
 /* ------------ start: selection of classes ------------ */
@@ -84,7 +86,7 @@ li {
 .content-text p,
 .nav-link,
 .card-description p {
-    font: 300 1.125rem/1.2 var(--main-font);
+    font: 400 1.125rem/1.2 var(--main-font);
 }
 
 /* ------------ end: selection of classes ------------ */
@@ -92,7 +94,6 @@ li {
 /* -- navbar -- */
 .navbar {
     justify-content: space-between;
-    box-shadow: 2px 2px 6px -1px var(--dark-bckgrnd-color);
 }
 
 /* logo */
@@ -131,7 +132,7 @@ li {
     margin-top: 2rem;
     padding: 4rem 0;
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     flex-flow: row wrap;
     justify-content: space-between;
 }
@@ -141,7 +142,6 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-right: 1rem;
 }
 
 /* content title */
@@ -151,19 +151,21 @@ li {
 }
 
 /* content button */
-.content-btn button {
+.content-btn a {
     outline: none;
     border: none;
     border-radius: 5px;
     padding: .25rem 2rem;
     background: var(--blue-bckgrnd-color);
-    color: var(--white1-txt-color);
     font: 500 1.125rem/1.2 var(--main-font);
     cursor: pointer;
     transition: all .3s ease-in-out;
+    color: var(--white1-txt-color);
+    text-transform: capitalize;
 }
 
-.content-btn button:hover {
+/* .content-btn */
+.content-btn a:hover {
     outline: 2px solid var(--white1-txt-color);
     outline-offset: 2px;
 }
@@ -228,6 +230,11 @@ li {
     box-shadow: -2px 2px 6px var(--dark-bckgrnd-color);
     border-radius: 5px;
     margin-bottom: 1rem;
+    transition: all .3s ease-in-out;
+}
+
+.card-image:hover {
+    transform: scale(1.1);
 }
 
 /* image */
@@ -236,4 +243,68 @@ li {
     height: 100%;
     object-fit: cover;
     cursor: pointer;
+}
+
+/* --- sign up --- */
+.signup-area {
+    background-color: var(--white1-txt-color);
+    padding: 4rem 0;
+}
+
+/* sign up container */
+.signup-container {
+    background-color: var(--blue-bckgrnd-color);
+    color: var(--white1-txt-color);
+    width: 70%;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+
+/* sign up message */
+.signup-msg h3 {
+    font: 500 1.25rem/1.8 var(--main-font);
+}
+
+.signup-msg p {
+    font: 400 1rem/1.2 var(--main-font);
+}
+
+/* sign up button */
+.signup-btn button {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: .25rem 2rem;
+    background: transparent;
+    color: var(--white1-txt-color);
+    border: 1px solid var(--white1-txt-color);
+    font: 500 1.125rem/1.2 var(--main-font);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.signup-btn button:hover {
+    outline: 2px solid var(--white1-txt-color);
+    outline-offset: 2px;
+}
+
+/* --- footer --- */
+.footer {
+    padding: 2rem;
+    text-align: center;
+    color: var(--white2-txt-color);
+}
+
+/* footer a */
+.footer a {
+    transition: all .3s ease-in-out;
+}
+
+.footer a:hover {
+    text-decoration: 2px underline;
+    text-underline-offset: .5rem;
 }
