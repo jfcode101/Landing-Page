@@ -1,0 +1,239 @@
+/* variables */
+:root {
+    /* font family */
+    --main-font: 'Roboto', sans-serif;
+
+    /* background colors */
+    --dark-bckgrnd-color: #1f2937;
+    --blue-bckgrnd-color: #3882f6;
+    --grey-bckgrnd-color: #e5e7eb;
+
+    /* text colors */
+    --white1-txt-color: #f9faf8;
+    --white2-txt-color: #e5efeb;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+    font-family: var(--main-font);
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    letter-spacing: 1px;
+    background-color: var(--dark-bckgrnd-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--white2-txt-color);
+}
+
+li {
+    list-style: none;
+}
+
+/* ------------ wrapper ------------ */
+.wrapper {
+    height: auto;
+    position: relative;
+}
+
+/* ---- header ---- */
+.header {
+    background-color: var(--dark-bckgrnd-color);
+    color: var(--white1-txt-color);
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* ------------ start: selection of classes ------------ */
+.navbar,
+.logo,
+.nav-list,
+.nav-item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar,
+.hero {
+    width: 80%;
+    margin: auto;
+}
+
+.hero-left,
+.hero-right {
+    flex: 1;
+    height: 250px;
+}
+
+.content-text p,
+.nav-link,
+.card-description p {
+    font: 300 1.125rem/1.2 var(--main-font);
+}
+
+/* ------------ end: selection of classes ------------ */
+
+/* -- navbar -- */
+.navbar {
+    justify-content: space-between;
+    box-shadow: 2px 2px 6px -1px var(--dark-bckgrnd-color);
+}
+
+/* logo */
+.logo {}
+
+/* nav list */
+.nav-list {
+    gap: 1.25rem;
+}
+
+/* nav item */
+.nav-item {
+    gap: .25rem;
+    text-transform: capitalize;
+}
+
+.nav-item span {
+    display: none;
+}
+
+/* nav link */
+.nav-link {
+    transition: all .3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: var(--white1-txt-color);
+    text-decoration: 4px underline var(--white1-txt-color);
+    text-underline-offset: 1rem;
+}
+
+/* ---- hero content ---- */
+.hero {
+    background-color: var(--dark-bckgrnd-color);
+    color: var(--white1-txt-color);
+    margin-top: 2rem;
+    padding: 4rem 0;
+    display: flex;
+    gap: 2rem;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+/* -- left content -- */
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 1rem;
+}
+
+/* content title */
+.content-title h1 {
+    color: var(--white1-txt-color);
+    font: normal 900 3rem var(--main-font);
+}
+
+/* content button */
+.content-btn button {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: .25rem 2rem;
+    background: var(--blue-bckgrnd-color);
+    color: var(--white1-txt-color);
+    font: 500 1.125rem/1.2 var(--main-font);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.content-btn button:hover {
+    outline: 2px solid var(--white1-txt-color);
+    outline-offset: 2px;
+}
+
+
+/* -- right content -- */
+.hero-right {}
+
+/* hero right image */
+.hero-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* ---- sections ---- */
+/* --- services --- */
+.services {
+    margin: 2rem 0;
+    padding: 2rem 0;
+    background-color: var(--white1-txt-color);
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font: 700 2.25rem var(--main-font);
+    text-transform: capitalize;
+}
+
+/* -- service container */
+.service-container {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    gap: 1rem;
+}
+
+/* service card */
+.service-card {
+    flex: 1;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    line-height: 1.4;
+}
+
+/* card description */
+.card-description dfn {
+    font: 500 1.25rem/1.6 var(--main-font);
+}
+
+/* card image */
+.card-image {
+    width: 200px;
+    height: 200px;
+    padding: 1rem;
+    border: 2px solid var(--blue-bckgrnd-color);
+    box-shadow: -2px 2px 6px var(--dark-bckgrnd-color);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+/* image */
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
