@@ -85,8 +85,9 @@ li {
 
 .content-text p,
 .nav-link,
-.card-description p {
-    font: 400 1.125rem/1.2 var(--main-font);
+.card-description p,
+.text p {
+    font: 300 1.125rem/1.2 var(--main-font);
 }
 
 /* ------------ end: selection of classes ------------ */
@@ -97,7 +98,26 @@ li {
 }
 
 /* logo */
-.logo {}
+.logo {
+    cursor: pointer;
+}
+
+.logo span {
+    font-size: 1.25rem;
+}
+
+.logo span:first-child {
+    margin-right: 1px;
+    font-size: 2.25rem;
+}
+
+.logo span:last-child {
+    text-transform: capitalize;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-right: 4px solid;
+    padding-right: .5rem;
+}
 
 /* nav list */
 .nav-list {
@@ -110,6 +130,7 @@ li {
     text-transform: capitalize;
 }
 
+/* nav item icons */
 .nav-item span {
     display: none;
 }
@@ -127,14 +148,15 @@ li {
 
 /* ---- hero content ---- */
 .hero {
+    height: auto;
     background-color: var(--dark-bckgrnd-color);
     color: var(--white1-txt-color);
-    margin-top: 2rem;
+    margin: 4rem auto;
     padding: 4rem 0;
     display: flex;
-    gap: 3rem;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 2rem;
 }
 
 /* -- left content -- */
@@ -170,7 +192,6 @@ li {
     outline-offset: 2px;
 }
 
-
 /* -- right content -- */
 .hero-right {}
 
@@ -185,8 +206,8 @@ li {
 /* ---- sections ---- */
 /* --- services --- */
 .services {
-    margin: 2rem 0;
-    padding: 2rem 0;
+    margin: 2rem 0 0;
+    padding: 4rem 0 2rem;
     background-color: var(--white1-txt-color);
 }
 
@@ -198,54 +219,102 @@ li {
 }
 
 /* -- service container */
-.service-container {
+.services-container {
     width: 70%;
     margin: auto;
     display: flex;
-    gap: 1rem;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
 }
 
-/* service card */
-.service-card {
-    flex: 1;
-    border-radius: 5px;
+/* item */
+.item {
+    width: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
-    line-height: 1.4;
+    margin-bottom: 2rem;
 }
 
-/* card description */
-.card-description dfn {
-    font: 500 1.25rem/1.6 var(--main-font);
-}
-
-/* card image */
-.card-image {
-    width: 200px;
-    height: 200px;
-    padding: 1rem;
-    border: 2px solid var(--blue-bckgrnd-color);
-    box-shadow: -2px 2px 6px var(--dark-bckgrnd-color);
-    border-radius: 5px;
-    margin-bottom: 1rem;
-    transition: all .3s ease-in-out;
-}
-
-.card-image:hover {
-    transform: scale(1.1);
+.item dfn {
+    font: 500 1.25rem var(--main-font);
 }
 
 /* image */
-.card-image img {
+.item img {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 4px solid var(--blue-bckgrnd-color);
+    border-radius: 5px;
+    cursor: pointer;
+    /* box-shadow: 1px 1px 2px var(--dark-bckgrnd-color); */
+    transition: all .3s ease-in-out;
+}
+
+.item img:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 3px 6px var(--dark-bckgrnd-color), -3px -3px 8px var(--grey-bckgrnd-color);
+}
+
+/* text */
+.text p {
+    text-align: center;
+}
+
+/* --- Testimonials --- */
+.testimonials {
+    background-color: var(--grey-bckgrnd-color);
+    padding: 4rem 0;
+}
+
+/* testimonial container */
+.testimonial-container {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+/* testimonial div */
+.testimonial-container div {
+    flex: 1 1 auto;
+}
+
+/* testimonial image */
+.testimonial-image {
+    width: 150px;
+    height: 150px;
+}
+
+.testimonial-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    cursor: pointer;
+    border: 4px solid var(--white1-txt-color);
+    border-radius: 100%;
 }
 
-/* --- sign up --- */
+/* testimonial text */
+.testimonial-text {
+    width: calc(100% - (2rem + 150px));
+}
+
+.testimonial-text q {
+    font: italic 300 1.2rem/1.4 var(--main-font);
+}
+
+.testimonial-text span {
+    display: block;
+    text-align: end;
+}
+
+/* --- sign up area --- */
 .signup-area {
     background-color: var(--white1-txt-color);
     padding: 4rem 0;
