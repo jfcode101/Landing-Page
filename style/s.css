@@ -457,6 +457,8 @@ li {
 
     /* testimonial div */
     .testimonial-content div {
+        /* width: inherit;
+        height: inherit; */
         flex: initial;
     }
 
@@ -477,6 +479,7 @@ li {
     .signup-content {
         width: 100%;
         padding: 2rem;
+        border-radius: 0;
         gap: 1rem;
         flex-direction: column;
     }
