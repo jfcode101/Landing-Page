@@ -42,13 +42,11 @@ li {
     list-style: none;
 }
 
-/* ------------ wrapper ------------ */
 .wrapper {
     height: auto;
     position: relative;
 }
 
-/* ---- header ---- */
 .header {
     background-color: var(--dark-bckgrnd-color);
     color: var(--white1-txt-color);
@@ -92,12 +90,10 @@ li {
 
 /* ------------ end: selection of classes ------------ */
 
-/* -- navbar -- */
 .navbar {
     justify-content: space-between;
 }
 
-/* logo */
 .logo {
     cursor: pointer;
 }
@@ -119,24 +115,35 @@ li {
     padding-right: .5rem;
 }
 
-/* nav list */
+.check-btn .material-symbols-rounded {
+    font-size: 2.85rem;
+    font-weight: 500;
+    line-height: 60px;
+    cursor: pointer;
+
+
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
 .nav-list {
     gap: 1.25rem;
 }
 
-/* nav item */
 .nav-item {
     gap: .25rem;
     text-transform: capitalize;
 }
 
-/* nav item icons */
 .nav-item span {
     display: none;
 }
 
-/* nav link */
 .nav-link {
+    font-weight: 400;
     transition: all .3s ease-in-out;
 }
 
@@ -146,7 +153,6 @@ li {
     text-underline-offset: 1rem;
 }
 
-/* ---- hero content ---- */
 .hero {
     height: auto;
     background-color: var(--dark-bckgrnd-color);
@@ -159,20 +165,17 @@ li {
     gap: 2rem;
 }
 
-/* -- left content -- */
 .hero-left {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-/* content title */
 .content-title h1 {
     color: var(--white1-txt-color);
     font: normal 900 3rem var(--main-font);
 }
 
-/* content button */
 .content-btn a {
     outline: none;
     border: none;
@@ -186,16 +189,11 @@ li {
     text-transform: capitalize;
 }
 
-/* .content-btn */
 .content-btn a:hover {
     outline: 2px solid var(--white1-txt-color);
     outline-offset: 2px;
 }
 
-/* -- right content -- */
-.hero-right {}
-
-/* hero right image */
 .hero-right img {
     width: 100%;
     height: 100%;
@@ -203,8 +201,6 @@ li {
     border-radius: 5px;
 }
 
-/* ---- sections ---- */
-/* --- services --- */
 .services {
     margin: 2rem 0 0;
     padding: 4rem 0 2rem;
@@ -218,7 +214,6 @@ li {
     text-transform: capitalize;
 }
 
-/* -- service content */
 .services-content {
     width: 70%;
     margin: auto;
@@ -229,7 +224,6 @@ li {
     gap: 2rem;
 }
 
-/* item */
 .item {
     width: 200px;
     display: flex;
@@ -265,18 +259,15 @@ li {
     transform: scale(1.1);
 }
 
-/* text */
 .text p {
     text-align: center;
 }
 
-/* --- Testimonials --- */
 .testimonials {
     background-color: var(--grey-bckgrnd-color);
     padding: 4rem 0;
 }
 
-/* testimonial content */
 .testimonial-content {
     width: 70%;
     margin: auto;
@@ -287,12 +278,10 @@ li {
     gap: 2rem;
 }
 
-/* testimonial div */
 .testimonial-content div {
     flex: 1 1 auto;
 }
 
-/* testimonial image */
 .testimonial-image {
     width: 150px;
     height: 150px;
@@ -306,7 +295,6 @@ li {
     border-radius: 100%;
 }
 
-/* testimonial text */
 .testimonial-text {
     width: calc(100% - (2rem + 150px));
 }
@@ -320,13 +308,11 @@ li {
     text-align: end;
 }
 
-/* --- sign up area --- */
 .signup-area {
     background-color: var(--white1-txt-color);
     padding: 4rem 0;
 }
 
-/* sign up content */
 .signup-content {
     background-color: var(--blue-bckgrnd-color);
     color: var(--white1-txt-color);
@@ -339,7 +325,6 @@ li {
     border-radius: 5px;
 }
 
-/* sign up message */
 .signup-msg h3 {
     font: 500 1.25rem/1.8 var(--main-font);
 }
@@ -348,7 +333,6 @@ li {
     font: 400 1rem/1.2 var(--main-font);
 }
 
-/* sign up button */
 .signup-btn button {
     outline: none;
     border: none;
@@ -367,14 +351,12 @@ li {
     outline-offset: 2px;
 }
 
-/* --- footer --- */
 .footer {
     padding: 2rem;
     text-align: center;
     color: var(--white2-txt-color);
 }
 
-/* footer a */
 .footer a {
     transition: all .3s ease-in-out;
 }
@@ -384,8 +366,34 @@ li {
     text-underline-offset: .5rem;
 }
 
-@media (max-width: 480px) {
 
+@media (max-width: 920px) {
+    .check-btn .material-symbols-rounded {
+        display: block;
+    }
+
+    .nav-list {
+        position: fixed;
+        width: 100%;
+        height: 200px;
+        top: 60px;
+        left: -200%;
+        transition: all .5s ease-in-out;
+        background-color: var(--dark-bckgrnd-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        border-bottom: 2px solid rgba(255, 255, 255, .15);
+        z-index: 99;
+    }
+
+    #check:checked~.nav-list {
+        left: 0;
+    }
+}
+
+@media (max-width: 480px) {
     .navbar {
         width: 100%;
         padding: 0 1rem;
@@ -423,7 +431,6 @@ li {
         width: 90%;
         margin-bottom: 1rem;
         padding: 1rem;
-        /* border: 1px solid red; */
         border-radius: 5px;
         box-shadow: 0 0 10px -1px var(--grey-bckgrnd-color);
     }
@@ -454,11 +461,7 @@ li {
         align-items: center;
     }
 
-
-    /* testimonial div */
     .testimonial-content div {
-        /* width: inherit;
-        height: inherit; */
         flex: initial;
     }
 
@@ -475,7 +478,6 @@ li {
         text-align: end;
     }
 
-    /* sign up content */
     .signup-content {
         width: 100%;
         padding: 1rem;
@@ -483,5 +485,4 @@ li {
         gap: 1rem;
         flex-direction: column;
     }
-
 }
