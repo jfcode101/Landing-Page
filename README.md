@@ -23,10 +23,8 @@ Overall this was a simple project, the only challenge was to look at the design 
 ### Screenshots
 
 - Desktop screenshot: ![](./images/desktop.png)
-
 - Tablet screenshot: ![](./images/tablet.png)
-
--Mobile screenshot: ![](./images/mobile.png)
+- Mobile screenshot: ![](./images/mobile.png)
 
 ### Links
 
@@ -43,11 +41,11 @@ Overall this was a simple project, the only challenge was to look at the design 
 #### Icons
 
 - HTML: [Flaticon - created by Freepik](https://www.flaticon.com/free-icons/html)
-- CSS:[Flaticon - created by Pixel perfect](https://www.flaticon.com/free-icons/css)
-- JS: [Flaticon - created by edt.im](https://www.flaticon.com/free-icons/javascript)
+- CSS: [Flaticon - created by Pixel perfect](https://www.flaticon.com/free-icons/css)
+- JavaScript: [Flaticon - created by edt.im](https://www.flaticon.com/free-icons/javascript)
 - Database: [Flaticon - created by Smashicons](https://www.flaticon.com/free-icons/database)
 
 
 ### Author
 
-[JFcode101](https://github.com/jfcode101/)
+- Github: [JFcode101](https://github.com/jfcode101/)

@@ -366,6 +366,24 @@ li {
     text-underline-offset: .5rem;
 }
 
+@media (max-width: 1240px) {
+    .signup-content {
+        width: 90%;
+        padding: 2rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .signup-msg h3,
+    .signup-area p {
+        text-align: center;
+    }
+
+    .signup-area {
+        padding: 2rem 0;
+    }
+}
+
 
 @media (max-width: 920px) {
     .check-btn .material-symbols-rounded {
@@ -390,6 +408,17 @@ li {
 
     #check:checked~.nav-list {
         left: 0;
+    }
+
+}
+
+@media (max-width: 780px) {
+    .hero {
+        width: 90%;
+    }
+
+    .content-btn{
+        margin-top: 1rem;
     }
 }
 
@@ -478,11 +507,22 @@ li {
         text-align: end;
     }
 
+    .signup-area {
+        padding: 1rem;
+    }
+
     .signup-content {
         width: 100%;
         padding: 1rem;
-        border-radius: 0;
         gap: 1rem;
         flex-direction: column;
+    }
+
+    .footer p {
+        line-height: 1.6;
+    }
+
+    .footer p span {
+        display: block;
     }
 }
