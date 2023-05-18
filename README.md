@@ -5,12 +5,12 @@ This is a simple Landing Page project created using HTML and CSS
 ## Table of Content
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshots](#screenshots)
-  - [Links](#links)
-   - [Code](#code)
-   - [Images](#images)
-   - [Icons](#icons)
+- [The challenge](#the-challenge)
+- [Screenshots](#screenshots)
+- [Links](#links)
+  - [Code](#code)
+  - [Images](#images)
+  - [Icons](#icons)
 - [Author](#author)
 
 ## Overview
